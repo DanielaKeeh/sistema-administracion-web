@@ -2,7 +2,7 @@
 
 Proyecto académico desarrollado en PHP para la gestión de empleados y productos mediante un panel administrativo.
 
-## 🛠 Tecnologías
+## Tecnologías
 - PHP
 - MySQL
 - HTML
@@ -10,7 +10,7 @@ Proyecto académico desarrollado en PHP para la gestión de empleados y producto
 - JavaScript
 - XAMPP
 
-## 🚀 Cómo ejecutar el proyecto
+## Cómo ejecutar el proyecto
 1. Descargar o clonar el repositorio
 2. Copiar la carpeta del proyecto en `xampp/htdocs`
 3. Abrir phpMyAdmin
@@ -20,12 +20,12 @@ Proyecto académico desarrollado en PHP para la gestión de empleados y producto
 7. Iniciar Apache y MySQL
 8. Abrir en el navegador `http://localhost/`
 
-## ✨ Funcionalidades
+## Funcionalidades
 - Login de administrador
 - Gestión de empleados
 - Gestión de productos
 
-## 📸 Capturas del sistema
+## Capturas del sistema
 
 ### Login
 ![iniciar_sesion](screenshots/iniciar_sesion.png)
@@ -45,5 +45,5 @@ Proyecto académico desarrollado en PHP para la gestión de empleados y producto
 ### Alta de productos
 ![productos](screenshots/alta_de_productos.png)
 
-## 📌 Notas
+## Notas
 Este proyecto se ejecuta en entorno local utilizando XAMPP. El repositorio contiene únicamente el código fuente y el script de base de datos :D.
