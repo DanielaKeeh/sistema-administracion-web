@@ -28,22 +28,22 @@ Proyecto académico desarrollado en PHP para la gestión de empleados y producto
 ## 📸 Capturas del sistema
 
 ### Login
-![Iniciar_Sesion](screenshots/iniciar_sesion.png)
+![iniciar_sesion](screenshots/iniciar_sesion.png)
 
 ### Panel principal
-![Panel_de_Inicio](screenshots/panel_de_inicio.png)
+![panel_de_inicio](screenshots/panel_de_inicio.png)
 
 ### Lista de empleados
-![Lista_de_Empleados](screenshots/lista_de_empleados.png)
+![lista_de_empleados](screenshots/lista_de_empleados.png)
 
 ### Alta de empleados
-![Alta_de_Empleados](screenshots/alta_de_empleados.png)
+![alta_de_empleados](screenshots/alta_de_empleados.png)
 
 ### Lista de Productos
-![Lista_De_Productos](screenshots/lista_de_productos.png)
+![lista_de_productos](screenshots/lista_de_productos.png)
 
 ### Alta de productos
-![Productos](screenshots/alta_de_productos.png)
+![productos](screenshots/alta_de_productos.png)
 
 ## 📌 Notas
 Este proyecto se ejecuta en entorno local utilizando XAMPP. El repositorio contiene únicamente el código fuente y el script de base de datos :D.
