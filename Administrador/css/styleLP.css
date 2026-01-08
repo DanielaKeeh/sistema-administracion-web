@@ -1,0 +1,147 @@
+:root{
+  --bg:#9FAAD2;
+  --table:#E4D3DD;
+  --text:#7A7A7A;
+  --line:rgba(0,0,0,.18);
+  --line-soft:rgba(0,0,0,.10);
+}
+
+*{box-sizing:border-box;}
+
+html,body{
+  margin:0;
+  padding:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+}
+
+.fila.titulo{
+  width:min(1100px,92%);
+  margin:28px auto 10px;
+}
+.fila.titulo>div{
+  background:transparent;
+  text-align:center;
+  font-size:clamp(24px,3.2vw,40px);
+  font-weight:800;
+  letter-spacing:.5px;
+  padding:18px 16px;
+  border-radius:18px;
+  outline:2px solid var(--line-soft);
+  box-shadow:0 6px 18px rgba(0,0,0,.12) inset;
+  color:#FFFFFF;
+}
+
+.tabla{
+  width:min(1100px,92%);
+  margin:16px auto 40px;
+  padding:0;
+  background:var(--table);
+  border-radius:18px;
+  box-shadow:0 12px 30px rgba(0,0,0,.20);
+  overflow-x:auto;
+  outline:1.5px solid var(--line-soft);
+}
+
+.tabla .fila{
+  display:grid;
+  grid-template-columns:70px 70px 1fr 1fr 1fr 1fr 60px 60px 70px;
+  align-items:center;
+  gap:0;
+  padding:14px 18px;
+  border-bottom:1px solid var(--line);
+}
+
+.tabla .fila.encabezado{
+  position:sticky;
+  top:0;
+  z-index:1;
+  background:color-mix(in oklab,var(--table) 92%,black 8%);
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  border-bottom:2px solid var(--line);
+  color:var(--text);
+}
+
+.tabla .fila:not(.encabezado):nth-child(even){
+  background:color-mix(in oklab,var(--table) 88%,black 12%);
+}
+
+.tabla .fila>div{
+  min-width:0;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-size:clamp(14px,1.4vw,18px);
+  color:var(--text);
+}
+
+.icono{
+  width:22px;
+  height:22px;
+  display:block;
+  margin-inline:auto;
+  opacity:.85;
+  filter:drop-shadow(0 1px 0 rgba(0,0,0,.25));
+}
+.tabla a:hover .icono{
+  opacity:1;
+  transform:scale(1.04);
+}
+
+.tabla .fila.encabezado+.fila{
+  border-top:1px solid var(--line);
+}
+
+.fila.crear{
+  grid-template-columns:1fr;
+  border-bottom:none;
+  background:transparent;
+  padding:18px;
+}
+.fila.crear>div{
+  grid-column:1/-1;
+}
+
+.cuadro a{
+  display:inline-block;
+  text-decoration:none;
+  color:#FFFFFF;
+  background:color-mix(in oklab,var(--table) 70%,black 30%);
+  padding:12px 18px;
+  border-radius:12px;
+  font-weight:700;
+  letter-spacing:.3px;
+  outline:1px solid var(--line);
+  box-shadow:0 6px 14px rgba(0,0,0,.22);
+  transition:transform .12s ease,box-shadow .12s ease,background .12s ease;
+}
+
+.cuadro a:hover{
+  transform:translateY(-1px);
+  box-shadow:0 10px 18px rgba(0,0,0,.28);
+}
+
+@media(max-width:780px){
+  .tabla .fila{
+    grid-template-columns:55px 55px .9fr .9fr 1fr 1fr 50px 50px 60px;
+    padding:12px 12px;
+  }
+  .icono{
+    width:20px;
+    height:20px;
+  }
+}
+
+@media(max-width:540px){
+  .tabla .fila{
+    grid-template-columns:50px 50px .8fr .8fr .9fr .9fr 45px 45px 55px;
+    font-size:14px;
+  }
+  .cuadro a{
+    width:100%;
+    text-align:center;
+  }
+}

@@ -1,0 +1,54 @@
+:root{
+  --bg:#9FAAD2;
+  --table:#E4D3DD;
+  --line-soft:rgba(0,0,0,.10);
+  --text-dark:#4e4e4e;
+}
+
+body{
+  margin:0;
+  padding:0;
+  background:var(--bg);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+}
+
+.fila.titulo{
+  width:min(600px,92%);
+  margin:28px auto 10px;
+}
+
+.fila.titulo>div{
+  background:transparent;
+  text-align:center;
+  font-size:clamp(22px,3vw,30px);
+  font-weight:800;
+  padding:16px 14px;
+  border-radius:18px;
+  outline:2px solid var(--line-soft);
+  box-shadow:0 6px 18px rgba(0,0,0,.12) inset;
+  color:white;
+}
+
+.contenedor-bienvenida{
+  width:min(600px,92%);
+  margin:40px auto 0;
+  background:var(--table);
+  border-radius:18px;
+  padding:24px 22px 26px;
+  box-shadow:0 12px 30px rgba(0,0,0,.20);
+  outline:1.5px solid var(--line-soft);
+  color:var(--text-dark);
+}
+
+.contenedor-bienvenida h2{
+  margin:0 0 12px;
+  font-size:22px;
+  font-weight:800;
+}
+
+.contenedor-bienvenida p{
+  margin:6px 0;
+  font-size:16px;
+  font-weight:600;
+  color:var(--text-dark);
+}

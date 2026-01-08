@@ -1,0 +1,122 @@
+:root{
+  --bg:#9FAAD2;
+  --table:#E4D3DD;
+  --text:#7A7A7A;
+  --line:rgba(0,0,0,.18);
+  --line-soft:rgba(0,0,0,.10);
+}
+
+*{box-sizing:border-box;}
+
+html,body{
+  margin:0;
+  padding:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+}
+
+.fila.titulo{
+  width:min(800px,92%);
+  margin:28px auto 10px;
+}
+.fila.titulo>div{
+  background:transparent;
+  text-align:center;
+  font-size:clamp(24px,3.2vw,40px);
+  font-weight:800;
+  letter-spacing:.5px;
+  padding:18px 16px;
+  border-radius:18px;
+  outline:2px solid var(--line-soft);
+  box-shadow:0 6px 18px rgba(0,0,0,.12) inset;
+  color:#ffffff;
+}
+
+.detalle-contenedor{
+  width:min(780px,92%);
+  margin:18px auto 40px;
+  padding:30px 26px 34px;
+  background:var(--table);
+  border-radius:18px;
+  box-shadow:0 12px 30px rgba(0,0,0,.20);
+  outline:1.5px solid var(--line-soft);
+}
+
+.detalle-contenedor h2{
+  text-align:center;
+  margin:0 0 25px;
+  font-size:clamp(20px,2.4vw,26px);
+  font-weight:800;
+  letter-spacing:.06em;
+  color:var(--text);
+}
+
+.detalle-item{
+  margin-bottom:14px;
+  font-size:17px;
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  color:var(--text);
+}
+
+.detalle-item strong{
+  min-width:120px;
+  font-weight:800;
+  color:var(--text);
+}
+
+.detalle-imagen{
+  margin:30px auto 22px;
+  width:180px;
+  height:180px;
+  border-radius:12px;
+  background:color-mix(in oklab,var(--table) 70%,black 30%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  box-shadow:0 6px 16px rgba(0,0,0,.25);
+}
+
+.detalle-imagen img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.btn-regresar-container{
+  margin-top:22px;
+  text-align:center;
+}
+
+a.btn-regresar{
+  display:inline-block;
+  padding:12px 24px;
+  border-radius:12px;
+  text-decoration:none;
+  background:#6A5D7B !important;
+  color:#ffffff !important;
+  font-weight:700;
+  letter-spacing:.3px;
+  box-shadow:0 6px 14px rgba(0,0,0,.22);
+  outline:1px solid var(--line);
+  font-size:17px;
+}
+
+a.btn-regresar:hover{
+  transform:translateY(-1px);
+  box-shadow:0 10px 18px rgba(0,0,0,.28);
+  background:#5b4f6a !important;
+}
+
+.error{
+  text-align:center;
+  padding:14px 10px;
+  border-radius:10px;
+  background:#ffd6d6;
+  color:#b30000;
+  font-size:15px;
+}
